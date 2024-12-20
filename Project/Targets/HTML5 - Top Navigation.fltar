@@ -11,12 +11,13 @@
   MasterPage="/Content/Resources/MasterPages/OtherTopics.flmsp"
   ResultsPerPage="10"
   Skin="/Project/Skins/HTML5 - Top Navigation.flskn"
-  ConditionTagExpression="exclude[General.Exclude] "
+  ConditionTagExpression="include[General.web_only], exclude[General.Exclude or General.print_only]"
   DefaultUrl="/Content/Home.htm"
   SearchResultsSkin="/Project/Skins/SearchResults.flskn"
   MasterStylesheet="/Content/Resources/Stylesheets/MainStyles.css"
   MasterStylesheetOverride="true"
-  DisableAutoSync="true">
+  DisableAutoSync="true"
+  MasterToc="/Project/TOCs/Main ToC.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
